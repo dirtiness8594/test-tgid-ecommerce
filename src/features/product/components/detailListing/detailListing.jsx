@@ -9,7 +9,7 @@ function DetailListing({ name, description, price }) {
             : null;
 
     return (
-        <div className="product__details">
+        <div className="list__details">
             <ProductDescription name={name} description={description} />
             <ProductPrice oldPrice={oldPrice} newPrice={newPrice} />
             {installmentText && <ProductInstallment text={installmentText} />}
@@ -20,10 +20,10 @@ function DetailListing({ name, description, price }) {
 const ProductPrice = ({ oldPrice, newPrice }) => {
     return (
         <>
-            {oldPrice && <span className="product__oldprice">R$ {oldPrice}</span>}
-            {newPrice && <span className="product__price">R$ {newPrice}</span>}
+            {oldPrice && <span className="list__oldprice">R$ {oldPrice}</span>}
+            {newPrice && <span className="list__price">R$ {newPrice}</span>}
             {oldPrice && newPrice && (
-                <span className="product__off">
+                <span className="list__off">
                     {/* {getDiscountPercentage(oldPrice, newPrice)}% OFF */}
                 </span>
             )}
@@ -32,16 +32,16 @@ const ProductPrice = ({ oldPrice, newPrice }) => {
 };
 
 const ProductInstallment = ({ text }) => (
-    <div className="product__installment">
-        <pre className="product__steps">{text}</pre>
-        <pre className="product__freight">Frete grátis full</pre>
+    <div className="list__installment">
+        <pre className="list__steps">{text}</pre>
+        <pre className="list__freight">Frete grátis full</pre>
     </div>
 );
 
 const ProductDescription = ({ name, description }) => (
     <>
-        <h3 className="product__name">{name}</h3>
-        <p className="product__shortinfo">{description}</p>
+        <h3 className="list__name">{name}</h3>
+        <p className="list__shortinfo">{description}</p>
     </>
 );
 

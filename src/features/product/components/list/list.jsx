@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../../styles/list.scss";
 import Listing from "../listing/listing";
+import { CiBarcode } from "react-icons/ci";
+
 import { fetchProductsByIds } from "../../services/productAPI";
 
 function List({ section }) {
@@ -12,7 +14,6 @@ function List({ section }) {
 
       try {
         const data = await fetchProductsByIds(section.items);
-        // Verifica se data é objeto e transforma em array
         const productArray = Array.isArray(data) ? data : Object.values(data);
         setProducts(productArray);
       } catch (err) {
@@ -23,16 +24,12 @@ function List({ section }) {
     loadProducts();
   }, [section]);
 
-  console.log("Prod ", products)
-
   return (
-    <div className={`product__list`}>
-      <div className="product__list__wrapper">
-        <h2 className="product__list__name">{section?.name}</h2>
-        <p className="product__list__info">{section?.description}</p>
-
-        
-        <div className="product__shelf product__shelf--simple">
+    <div className={`list`}>
+      <div className="list__wrapper">
+        <h2 className="list__name"><CiBarcode />{section?.name}</h2>
+        <p className="list__info">{section?.description}</p>
+        <div className="list__shelf list__shelf--simple">
           {products ? (
             products.map((product, index) => (
               <Listing key={index} product={product} />
@@ -40,7 +37,6 @@ function List({ section }) {
           ) : (
             <p>No products available</p>
           )}
-
         </div>
       </div>
     </div>

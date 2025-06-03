@@ -14,7 +14,6 @@ function Home() {
         async function loadSections() {
             try {
                 const data = await fetchHomeSections();
-                // Como o JSON é um objeto, transformamos em array:
                 const parsed = Object.values(data);
                 setSections(parsed);
             } catch (err) {

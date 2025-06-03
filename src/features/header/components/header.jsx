@@ -1,26 +1,46 @@
 import { useState } from 'react';
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { useCartStore } from '../../../store/cartStore';
+
 import '../styles/Header.scss';
 
-export default function Header() {
+function Header() {
   const [open, setOpen] = useState(false);
+  const cartItems = useCartStore((state) => state.cart);
+  const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
 
   return (
     <header className="header">
-      <h1 className="logo">Meu Site</h1>
+        <h1 className="header__logo">
+        <a href="/">
+          Meu Site
+        </a>
+          </h1>
 
-      <button className={`menu-btn ${open ? 'open' : ''}`} onClick={() => setOpen(!open)}>
+
+      <a title="Ver carrinho" href="/checkout" className="header__cart">
+        <AiOutlineShoppingCart />
+        {totalItems > 0 && <span className="header__cart-badge">{totalItems}</span>}
+      </a>
+
+      <button
+        className={`header__menu-btn ${open ? 'open' : ''}`}
+        onClick={() => setOpen(!open)}
+      >
         <span></span>
         <span></span>
         <span></span>
       </button>
 
       {open && (
-        <nav className="menu">
+        <nav className="header__menu">
           <a href="/">Home</a>
-          <a href="/produtos">Produtos</a>
-          <a href="/contato">Contato</a>
+          <a href="/">Produtos</a>
+          <a href="/">Contato</a>
         </nav>
       )}
     </header>
   );
 }
+
+export default Header
