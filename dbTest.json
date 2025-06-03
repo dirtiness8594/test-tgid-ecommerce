@@ -5,7 +5,7 @@
             "name": "Destaque",
             "description": "Lorem Ipsum",
             "category": "Malcol X",
-            "items": [0,1,2]
+            "items": [0, 1, 2]
         }
     },
     "products": {
@@ -81,16 +81,8 @@
                     }
                 ]
             },
-            "reviews": [
-                5,
-                4,
-                4,
-                5,
-                3
-            ],
-            "ticket": [
-                "DESCONTO10"
-            ]
+            "reviews": [5, 4, 4, 5, 3],
+            "ticket": ["DESCONTO10"]
         },
         "1": {
             "id": 0,
@@ -164,16 +156,8 @@
                     }
                 ]
             },
-            "reviews": [
-                5,
-                4,
-                4,
-                5,
-                3
-            ],
-            "ticket": [
-                "DESCONTO10"
-            ]
+            "reviews": [5, 4, 4, 5, 3],
+            "ticket": ["DESCONTO10"]
         },
         "2": {
             "id": 0,
@@ -247,16 +231,8 @@
                     }
                 ]
             },
-            "reviews": [
-                5,
-                4,
-                4,
-                5,
-                3
-            ],
-            "ticket": [
-                "DESCONTO10"
-            ]
+            "reviews": [5, 4, 4, 5, 3],
+            "ticket": ["DESCONTO10"]
         }
     }
 }
