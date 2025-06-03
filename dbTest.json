@@ -1,0 +1,262 @@
+{
+    "sections": {
+        "0": {
+            "id": 0,
+            "name": "Destaque",
+            "description": "Lorem Ipsum",
+            "category": "Malcol X",
+            "items": [0,1,2]
+        }
+    },
+    "products": {
+        "0": {
+            "id": 0,
+            "name": "Smartphone Galaxy X",
+            "fullName": "Smartphone Galaxy X 128GB 6GB RAM - Preto",
+            "description": "Um smartphone potente com câmera tripla, bateria de longa duração e tela AMOLED.",
+            "price": {
+                "oldPrice": "1999.90",
+                "newPrice": "1599.90",
+                "installment": {
+                    "amount": 10,
+                    "value": "159.99",
+                    "fees": false
+                }
+            },
+            "images": [
+                {
+                    "original": "https://picsum.photos/900/900?1",
+                    "thumbnail": "https://picsum.photos/50/50?1"
+                },
+                {
+                    "original": "https://picsum.photos/900/900?2",
+                    "thumbnail": "https://picsum.photos/50/50?2"
+                }
+            ],
+            "category": {
+                "id": 1,
+                "name": "Smartphones",
+                "path": "smartphones"
+            },
+            "availability": true,
+            "type": "retail",
+            "bannerFooter": {
+                "image": "https://picsum.photos/1200/300?footer",
+                "url": "/"
+            },
+            "characteristics": [
+                {
+                    "id": "1",
+                    "title": "Câmera",
+                    "description": "Tripla, 64MP"
+                },
+                {
+                    "id": "2",
+                    "title": "Bateria",
+                    "description": "5000mAh"
+                },
+                {
+                    "id": "3",
+                    "title": "Tela",
+                    "description": "6.5” AMOLED"
+                }
+            ],
+            "delivery": {
+                "dayUntilDelivery": {
+                    "firstDayExpected": 2,
+                    "lastDayExpected": 5
+                },
+                "fastDelivery": true,
+                "hasPickUpStore": true,
+                "daysUntilPickUpStore": 3,
+                "hasUserLocation": false
+            },
+            "questions": {
+                "id": "q1",
+                "list": [
+                    {
+                        "id": "q01",
+                        "question": "Esse produto tem garantia?",
+                        "answer": "Sim, possui garantia de 1 ano."
+                    }
+                ]
+            },
+            "reviews": [
+                5,
+                4,
+                4,
+                5,
+                3
+            ],
+            "ticket": [
+                "DESCONTO10"
+            ]
+        },
+        "1": {
+            "id": 0,
+            "name": "Smartphone Galaxy X",
+            "fullName": "Smartphone Galaxy X 128GB 6GB RAM - Preto",
+            "description": "Um smartphone potente com câmera tripla, bateria de longa duração e tela AMOLED.",
+            "price": {
+                "oldPrice": "1999.90",
+                "newPrice": "1599.90",
+                "installment": {
+                    "amount": 10,
+                    "value": "159.99",
+                    "fees": false
+                }
+            },
+            "images": [
+                {
+                    "original": "https://picsum.photos/900/900?1",
+                    "thumbnail": "https://picsum.photos/50/50?1"
+                },
+                {
+                    "original": "https://picsum.photos/900/900?2",
+                    "thumbnail": "https://picsum.photos/50/50?2"
+                }
+            ],
+            "category": {
+                "id": 1,
+                "name": "Smartphones",
+                "path": "smartphones"
+            },
+            "availability": true,
+            "type": "retail",
+            "bannerFooter": {
+                "image": "https://picsum.photos/1200/300?footer",
+                "url": "/"
+            },
+            "characteristics": [
+                {
+                    "id": "1",
+                    "title": "Câmera",
+                    "description": "Tripla, 64MP"
+                },
+                {
+                    "id": "2",
+                    "title": "Bateria",
+                    "description": "5000mAh"
+                },
+                {
+                    "id": "3",
+                    "title": "Tela",
+                    "description": "6.5” AMOLED"
+                }
+            ],
+            "delivery": {
+                "dayUntilDelivery": {
+                    "firstDayExpected": 2,
+                    "lastDayExpected": 5
+                },
+                "fastDelivery": true,
+                "hasPickUpStore": true,
+                "daysUntilPickUpStore": 3,
+                "hasUserLocation": false
+            },
+            "questions": {
+                "id": "q1",
+                "list": [
+                    {
+                        "id": "q01",
+                        "question": "Esse produto tem garantia?",
+                        "answer": "Sim, possui garantia de 1 ano."
+                    }
+                ]
+            },
+            "reviews": [
+                5,
+                4,
+                4,
+                5,
+                3
+            ],
+            "ticket": [
+                "DESCONTO10"
+            ]
+        },
+        "2": {
+            "id": 0,
+            "name": "Smartphone Galaxy X",
+            "fullName": "Smartphone Galaxy X 128GB 6GB RAM - Preto",
+            "description": "Um smartphone potente com câmera tripla, bateria de longa duração e tela AMOLED.",
+            "price": {
+                "oldPrice": "1999.90",
+                "newPrice": "1599.90",
+                "installment": {
+                    "amount": 10,
+                    "value": "159.99",
+                    "fees": false
+                }
+            },
+            "images": [
+                {
+                    "original": "https://picsum.photos/900/900?1",
+                    "thumbnail": "https://picsum.photos/50/50?1"
+                },
+                {
+                    "original": "https://picsum.photos/900/900?2",
+                    "thumbnail": "https://picsum.photos/50/50?2"
+                }
+            ],
+            "category": {
+                "id": 1,
+                "name": "Smartphones",
+                "path": "smartphones"
+            },
+            "availability": true,
+            "type": "retail",
+            "bannerFooter": {
+                "image": "https://picsum.photos/1200/300?footer",
+                "url": "/"
+            },
+            "characteristics": [
+                {
+                    "id": "1",
+                    "title": "Câmera",
+                    "description": "Tripla, 64MP"
+                },
+                {
+                    "id": "2",
+                    "title": "Bateria",
+                    "description": "5000mAh"
+                },
+                {
+                    "id": "3",
+                    "title": "Tela",
+                    "description": "6.5” AMOLED"
+                }
+            ],
+            "delivery": {
+                "dayUntilDelivery": {
+                    "firstDayExpected": 2,
+                    "lastDayExpected": 5
+                },
+                "fastDelivery": true,
+                "hasPickUpStore": true,
+                "daysUntilPickUpStore": 3,
+                "hasUserLocation": false
+            },
+            "questions": {
+                "id": "q1",
+                "list": [
+                    {
+                        "id": "q01",
+                        "question": "Esse produto tem garantia?",
+                        "answer": "Sim, possui garantia de 1 ano."
+                    }
+                ]
+            },
+            "reviews": [
+                5,
+                4,
+                4,
+                5,
+                3
+            ],
+            "ticket": [
+                "DESCONTO10"
+            ]
+        }
+    }
+}
