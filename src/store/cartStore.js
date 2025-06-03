@@ -1,4 +1,3 @@
-// src/store/cartStore.js
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
@@ -26,7 +25,7 @@ export const useCartStore = create(
       clearCart: () => set({ cart: [] }),
     }),
     {
-      name: "cart-storage", // chave no localStorage
+      name: "cart-storage",
     }
   )
 );

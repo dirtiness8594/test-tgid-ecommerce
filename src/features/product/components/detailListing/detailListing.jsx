@@ -1,5 +1,4 @@
 import React from "react";
-// import { getDiscountPercentage } from "../../utils/productUtils";
 
 function DetailListing({ name, description, price }) {
     const { oldPrice, newPrice, installment } = price || {};
@@ -22,11 +21,6 @@ const ProductPrice = ({ oldPrice, newPrice }) => {
         <>
             {oldPrice && <span className="list__oldprice">R$ {oldPrice}</span>}
             {newPrice && <span className="list__price">R$ {newPrice}</span>}
-            {oldPrice && newPrice && (
-                <span className="list__off">
-                    {/* {getDiscountPercentage(oldPrice, newPrice)}% OFF */}
-                </span>
-            )}
         </>
     );
 };
